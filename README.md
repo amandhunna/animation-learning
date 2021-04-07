@@ -1,0 +1,2 @@
+- basic setup
+- added image
