@@ -1,41 +1,36 @@
-/* .ball {
+.ball {
   border-radius: 50%;
-  position: fixed;
   width: 20px;
   height: 20px;
-  top: 30%;
   animation-name: bounce;
-  animation-duration: 5s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
+  position: fixed; /* ball with move with reference to this */
 }
-
-#white {
-  left: 50%;
-  animation-timing-function: ease-in;
-}
-
+/* changing the */
 @keyframes bounce {
+  /* percentage of time */
   0% {
-    top: 0px;
+    top: 0px; /* top of parent */
     background-color: white;
   }
-
   40% {
+    top: 50%; /* height of parent */
     background-color: black;
   }
-
   50% {
-    top: 85%;
+    top: 55%;
     background-color: black;
   }
   90% {
-    background-color: white;
+    top: 100%;
+    background-color: #137e40;
   }
   100% {
     top: 0px;
-    background-color: #white;
+    background-color: rgb(63, 63, 131);
   }
-} */
+}
 
 body {
   animation-name: bodyColorChange;
@@ -46,6 +41,7 @@ body {
 
 @keyframes bodyColorChange {
   0% {
+    /* percentage of time */
     background-color: white;
   }
   20% {
