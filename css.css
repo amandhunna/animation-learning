@@ -1,23 +1,67 @@
-body {
-  display: flex;
-  justify-content: center;
-}
-
-.ball {
-  width: 100px;
-  height: 100px;
+/* .ball {
   border-radius: 50%;
-  background-color: #ff5722;
-  animation: bounce 0.5s;
-  animation-direction: alternate;
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  top: 30%;
+  animation-name: bounce;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
 }
 
+#white {
+  left: 50%;
+  animation-timing-function: ease-in;
+}
+
 @keyframes bounce {
-  from {
-    transform: translate3d(40px, 10px, 0);
+  0% {
+    top: 0px;
+    background-color: white;
   }
-  to {
-    transform: translate3d(-20px, 400px, 0);
+
+  40% {
+    background-color: black;
+  }
+
+  50% {
+    top: 85%;
+    background-color: black;
+  }
+  90% {
+    background-color: white;
+  }
+  100% {
+    top: 0px;
+    background-color: #white;
+  }
+} */
+
+body {
+  animation-name: bodyColorChange;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bodyColorChange {
+  0% {
+    background-color: white;
+  }
+  20% {
+    background-color: red;
+  }
+  50% {
+    background-color: black;
+  }
+  55% {
+    background-color: yellow;
+  }
+  95% {
+    background-color: indianred;
+  }
+
+  100% {
+    background-color: blue;
   }
 }
