@@ -1,17 +1,23 @@
 .tuna {
-  animation: tunaWalk 4s linear; 
-  background: url(http://stash.rachelnabors.com/animation-workshop/sprite_catwalk.png) 0 100% no-repeat; 
+  animation: tunaWalk 1s steps(12) infinite;
+  background: url(http://stash.rachelnabors.com/animation-workshop/sprite_catwalk.png)
+    0 100% no-repeat;
   height: 200px;
   width: 400px;
-  margin: 100px auto 0;e
+  margin: 100px auto 0;
 }
 
 /* Don't forget: You'll need an @keyframes block to change the background image's position! */
 
-
-p {text-align: center;}
+p {
+  text-align: center;
+}
 
 @keyframes tunaWalk {
-  0% { background-position: 0 0;}
-  100% { background-position: 0 -2200px}
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -2400px;
+  }
 }
