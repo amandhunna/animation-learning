@@ -8,7 +8,7 @@
 }
 
 /* Don't forget: You'll need an @keyframes block to change the background image's position! */
-
+/* We cant control users, can only control what they can see */
 p {
   text-align: center;
 }
@@ -20,4 +20,17 @@ p {
   100% {
     background-position: 0 -2400px;
   }
+}
+
+.tail {
+  animation-name: tailWag;
+  animation-timing-function: steps(5);
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: paused;
+}
+
+.tail:hover {
+  animation-play-state: running;
 }

@@ -15,3 +15,9 @@ animation : name duration timing-function animation-delay iteration-count
 }
 
 timing-function, animation-delay, iteration-count=1are optional
+
+- animation-fill-mode: can be **backwards** (the element displays 0% values before the animation starts). can be set to **forwards** (retain 100% values alfter animation finishes), **both** or **none** (default).
+
+- animation-play-state: default to **running** but can be set to **paused**.
+
+- animation-direction: default to **normal** but can be set to **alternate, reverse, alternate-reverse**.
