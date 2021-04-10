@@ -21,3 +21,17 @@ timing-function, animation-delay, iteration-count=1are optional
 - animation-play-state: default to **running** but can be set to **paused**.
 
 - animation-direction: default to **normal** but can be set to **alternate, reverse, alternate-reverse**.
+
+---
+
+**State ful transitions and supplemental animations**
+
+elements indicate animation
+
+- direction
+- solidity
+- momentum
+
+library : smooth.js
+
+- polygon effect
