@@ -35,3 +35,5 @@ elements indicate animation
 library : smooth.js
 
 - polygon effect
+
+- GSAP: GreenSock Animation Platform
